@@ -1,0 +1,20 @@
+[
+  {"date": "2016-11-01", "type": "COURSE", "distance": "5.14", "duration": "0:30:03"},
+  {"date": "2016-11-05", "type": "COURSE", "distance": "5.04", "duration": "0:27:35"},
+  {"date": "2016-11-26", "type": "COURSE", "distance": "5.01", "duration": "0:27:24"},
+  {"date": "2016-11-27", "type": "ROLLER", "distance": "30.02", "duration": "1:29:11"},
+  {"date": "2016-11-29", "type": "COURSE", "distance": "5.13", "duration": "0:30:08"},
+  {"date": "2016-12-04", "type": "COURSE", "distance": "6.01", "duration": "0:35:48"},
+  {"date": "2016-12-10", "type": "BIKE_INDOOR", "distance": "30", "duration": "1:00:00", "program": "2"},
+  {"date": "2016-12-11", "type": "BIKE_INDOOR", "distance": "16.46", "duration": "0:30:00", "program": "1"},
+  {"date": "2016-12-16", "type": "BIKE_INDOOR", "distance": "34.4", "duration": "1:00:00", "program": "8"},
+  {"date": "2016-12-18", "type": "COURSE", "distance": "10.04", "duration": "0:56:47", "decription": "Corrida de Noël du Pouliguen"},
+  {"date": "2016-12-21", "type": "ROLLER_INDOOR", "description": "Vitness"},
+  {"date": "2016-12-21", "type": "BIKE_INDOOR", "distance": "33.66", "duration": "1:00:00", "program": "5"},
+  {"date": "2016-12-22", "type": "COURSE", "distance": "6", "duration": "0:32:40"},
+  {"date": "2016-12-24", "type": "WORKOUT", "program": "2/5 MORPHEUS", "duration": "0:04:31"},
+  {"date": "2016-12-24", "type": "COURSE", "distance": "6.05", "duration": "0:34:09"},
+  {"date": "2016-12-24", "type": "WORKOUT", "program": "MORPHEUS", "duration": "0:08:28"},
+  {"date": "2016-12-27", "type": "COURSE", "distance": "10.05", "duration": "0:58:47"},
+  {"date": "2016-12-28", "type": "COURSE", "distance": "10.82", "duration": "1:02:38"}
+]
