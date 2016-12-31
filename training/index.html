@@ -5,3 +5,46 @@ permalink: /training/
 ---
 
 <h1>Entraînement</h1>
+
+<h2>Détails des entraînements</h2>
+
+<h2>Suivi du poids</h2>
+
+<canvas id="weightChart" width="400" height="120"></canvas>
+
+<script type="text/javascript" src="{{ "/assets/scripts/Chart.bundle.min.js" | relative_url }}"></script>
+
+<script>
+
+var weights = {{ site.data.weight | jsonify }};
+
+var labels = weights.map(function(item) { return item.date })
+var data = weights.map(function(item) { return item.weight })
+
+var ctx = document.getElementById("weightChart");
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: labels,
+        datasets: [{
+            label: 'Poids',
+            data: data,
+            fill: false
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    max: 108,
+                    min: 100
+                }
+            }],
+            xAxes: [{
+                type: 'time'
+                
+            }]
+        }
+    }
+});
+</script>
