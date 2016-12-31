@@ -12,9 +12,10 @@
   {"date": "2016-12-21", "type": "ROLLER_INDOOR", "description": "Vitness"},
   {"date": "2016-12-21", "type": "BIKE_INDOOR", "distance": "33.66", "duration": "1:00:00", "program": "5"},
   {"date": "2016-12-22", "type": "COURSE", "distance": "6", "duration": "0:32:40"},
-  {"date": "2016-12-24", "type": "WORKOUT", "program": "2/5 MORPHEUS", "duration": "0:04:31"},
+  {"date": "2016-12-24", "type": "WORKOUT", "program": "2/5 MORPHEUS standard", "duration": "0:04:31"},
   {"date": "2016-12-24", "type": "COURSE", "distance": "6.05", "duration": "0:34:09"},
-  {"date": "2016-12-24", "type": "WORKOUT", "program": "MORPHEUS", "duration": "0:08:28"},
+  {"date": "2016-12-24", "type": "WORKOUT", "program": "MORPHEUS standard", "duration": "0:08:28"},
   {"date": "2016-12-27", "type": "COURSE", "distance": "10.05", "duration": "0:58:47"},
-  {"date": "2016-12-28", "type": "COURSE", "distance": "10.82", "duration": "1:02:38"}
+  {"date": "2016-12-28", "type": "COURSE", "distance": "10.82", "duration": "1:02:38"},
+  {"date": "2016-12-30", "type": "WORKOUT", "program": "MORPHEUS standard", "duration": "0:07:28"}
 ]
