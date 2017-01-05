@@ -12,12 +12,13 @@
   {"date": "2016-12-21", "type": "ROLLER_INDOOR", "description": "Vitness"},
   {"date": "2016-12-21", "type": "BIKE_INDOOR", "distance": "33.66", "duration": "1:00:00", "program": "5"},
   {"date": "2016-12-22", "type": "RUNNING", "distance": "6", "duration": "0:32:40"},
-  {"date": "2016-12-24", "type": "WORKOUT", "program": "2/5 MORPHEUS standard", "duration": "0:04:31"},
+  {"date": "2016-12-24", "type": "WORKOUT", "program": "2/5 MORPHEUS Standard", "duration": "0:04:31"},
   {"date": "2016-12-24", "type": "RUNNING", "distance": "6.05", "duration": "0:34:09"},
-  {"date": "2016-12-24", "type": "WORKOUT", "program": "MORPHEUS standard", "duration": "0:08:28"},
+  {"date": "2016-12-24", "type": "WORKOUT", "program": "MORPHEUS Standard", "duration": "0:08:28"},
   {"date": "2016-12-27", "type": "RUNNING", "distance": "10.05", "duration": "0:58:47"},
   {"date": "2016-12-28", "type": "RUNNING", "distance": "10.82", "duration": "1:02:38"},
-  {"date": "2016-12-30", "type": "WORKOUT", "program": "MORPHEUS standard", "duration": "0:07:28"},
+  {"date": "2016-12-30", "type": "WORKOUT", "program": "MORPHEUS Standard", "duration": "0:07:28"},
   {"date": "2016-12-31", "type": "BIKE_INDOOR", "distance": "34.63", "duration": "1:00:00", "program": "3"},
-  {"date": "2017-01-01", "type": "RUNNING", "distance": "6.01", "duration": "0:34:00"}
+  {"date": "2017-01-01", "type": "RUNNING", "distance": "6.01", "duration": "0:34:00"},
+  {"date": "2017-01-03", "type": "WORKOUT", "program": "W01-01 | 10 PUSHUPS + 25 BURPEES + 1/5 APHRODITE Endurance", "duration": "0:19:27"},
 ]
