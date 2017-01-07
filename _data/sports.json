@@ -22,5 +22,6 @@
   {"date": "2017-01-03", "type": "WORKOUT", "program": "W01-01 | 10 PUSHUPS + 25 BURPEES + 1/5 APHRODITE Endurance", "duration": "0:19:27"},
   {"date": "2017-01-05", "type": "WORKOUT", "program": "W01-02 | 10 SPLIT LUNGES + 2/5 NEMESIS Endurance", "duration": "0:10:27"},
   {"date": "2017-01-06", "type": "BIKE_INDOOR", "distance": "26.20", "duration": "0:45:00", "program": "5"},
-  {"date": "2017-01-07", "type": "WORKOUT", "program": "W01-03 | 25 HH LEG RAISES + 1/4 VENUS", "duration": "0:14:36"}
+  {"date": "2017-01-07", "type": "WORKOUT", "program": "W01-03 | 25 HH LEG RAISES + 1/4 VENUS", "duration": "0:14:36"},
+  {"date": "2017-01-07", "type": "RUNNING", "distance": "6.01", "duration": "0:34:27"}
 ]
