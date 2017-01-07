@@ -8,14 +8,86 @@ permalink: /training/
 
 <h2>Détails des entraînements</h2>
 
+<canvas id="sportsChart" width="400" height="120"></canvas>
+
 <h2>Suivi du poids</h2>
 
 <canvas id="weightChart" width="400" height="120"></canvas>
 
-<script type="text/javascript" src="{{ "/assets/scripts/Chart.bundle.min.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/assets/scripts/moment.min.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/assets/scripts/Chart.min.js" | relative_url }}"></script>
 
 <script>
+var sports = {{ site.data.sports | jsonify }};
+var weeklyData = {};
+sports.forEach(function(item) {
+  var date = moment(item.date)
+  var key = date.year() + "-s" + date.isoWeek();
+  if (key === "2017-s52") {
+    key = "2016-s52";
+  }
+  if (!weeklyData[key]) {
+    weeklyData[key] = {"RUNNING": 0, "ROLLER": 0, "BIKE_INDOOR": 0, "WORKOUT": 0};
+  }
+  weeklyData[key][item.type] = weeklyData[key][item.type] + Math.round(moment.duration(item.duration).asMinutes());
+});
 
+var labels = Object.keys(weeklyData);
+var runningData = labels.map(function(label) { return weeklyData[label]["RUNNING"] });
+var rollerData = labels.map(function(label) { return weeklyData[label]["ROLLER"] });
+var bikeIndoorData = labels.map(function(label) { return weeklyData[label]["BIKE_INDOOR"] });
+var workoutData = labels.map(function(label) { return weeklyData[label]["WORKOUT"] });
+
+var ctx = document.getElementById("sportsChart");
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: labels,
+        datasets: [
+          {
+            label: 'Running',
+            data: runningData,
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1
+          },
+          {
+            label: 'Roller',
+            data: rollerData,
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+          },
+          {
+            label: 'Indoor Bike',
+            data: bikeIndoorData,
+            backgroundColor: 'rgba(255, 206, 86, 0.2)',
+            borderColor: 'rgba(255, 206, 86, 1)',
+            borderWidth: 1
+          },
+          {
+            label: 'Workout',
+            data: workoutData,
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+          }
+      ]
+    },
+    options: {
+      scales: {
+            xAxes: [{
+                stacked: true
+            }],
+            yAxes: [{
+                stacked: true
+            }]
+        }
+    }
+});
+</script>
+
+<script>
 var weights = {{ site.data.weight | jsonify }};
 
 var labels = weights.map(function(item) { return item.date })
@@ -42,7 +114,7 @@ var myChart = new Chart(ctx, {
             }],
             xAxes: [{
                 type: 'time'
-                
+
             }]
         }
     }
