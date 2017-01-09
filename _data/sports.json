@@ -25,5 +25,6 @@
   {"date": "2017-01-07", "type": "WORKOUT", "program": "W01-03 | 25 HH LEG RAISES + 1/4 VENUS", "duration": "0:14:36"},
   {"date": "2017-01-07", "type": "RUNNING", "distance": "6.01", "duration": "0:34:27"},
   {"date": "2017-01-08", "type": "BIKE_INDOOR", "distance": "33.26", "duration": "1:00:00", "program": "6"},
-  {"date": "2017-01-08", "type": "BIKE_INDOOR", "distance": "18", "duration": "0:30:00", "program": "2"}
+  {"date": "2017-01-08", "type": "BIKE_INDOOR", "distance": "18", "duration": "0:30:00", "program": "2"},
+  {"date": "2017-01-09", "type": "WORKOUT", "program": "W02-01 | 10 CRUNCHES + 25 PIKIES + 2/4 HERMES", "duration": "0:21:38"}
 ]
