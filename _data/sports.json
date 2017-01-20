@@ -32,5 +32,6 @@
   {"date": "2017-01-13", "type": "WORKOUT", "program": "W02-03 | 10 SPRAWLS + 25 HH SQUATS + 1/3 APOLLON Standard 2x2", "duration": "0:26:08"},
   {"date": "2017-01-13", "type": "RUNNING", "distance": "6.49", "duration": "0:38:13"},
   {"date": "2017-01-16", "type": "WORKOUT", "program": "W03-01 | 10 MOUNTAIN CLIMBERS + 25 BURPEES + 4/5 MORPHEUS Standard 2x2", "duration": "0:10:43"},
-  {"date": "2017-01-19", "type": "WORKOUT", "program": "W03-02 | 10 SRAWLS + 50 HIGH KNEES + 1/5 APHRODITE Endurance", "duration": "0:12:33"}
+  {"date": "2017-01-19", "type": "WORKOUT", "program": "W03-02 | 10 SRAWLS + 50 HIGH KNEES + 1/5 APHRODITE Endurance", "duration": "0:12:33"},
+  {"date": "2017-01-20", "type": "BIKE_INDOOR", "distance": "36.75", "duration": "1:00:00", "program": "9"}
 ]
