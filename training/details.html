@@ -1,0 +1,69 @@
+---
+layout: page
+title: Détails des entraînements
+permalink: /training/details
+exclude: true
+---
+
+<h1>Détails des entraînements</h1>
+
+<table class="bordered">
+  <thead>
+    <tr>
+        <th data-field="date">Date</th>
+        <th data-field="sport">Sport</th>
+        <th data-field="duration">Durée</th>
+        <th data-field="distance">Distance (km)</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for training in site.data.sports %}
+    <tr>
+      <td>
+        <span class="hide-on-small-only">{{ training.date | date: "%d/%m/%Y" }}</span>
+        <span class="hide-on-med-and-up">{{ training.date | date: "%d %b" }}</span>
+      </td>
+      <td>
+        {% case training.type %}
+          {% when 'BIKE_INDOOR' %}
+            <span class="hide-on-small-only">Vélo d'intérieur</span>
+            <span class="hide-on-med-and-up">
+              <img style="height: 20%" src="{{ "/assets/images/bicycle.svg" | relative_url }}" title="Vélo d'intérieur" />
+            </span>
+          {% when 'WORKOUT' %}
+            <span class="hide-on-small-only">Workout Freeletics</span>
+            <span class="hide-on-med-and-up">
+              <img style="height: 20%" src="{{ "/assets/images/man-doing-pushups.svg" | relative_url }}" title="Workout Freeletics" />
+            </span>
+          {% when 'RUNNING' %}
+            <span class="hide-on-small-only">Course à pieds</span>
+            <span class="hide-on-med-and-up">
+              <img style="height: 20%" src="{{ "/assets/images/sprint.svg" | relative_url }}" title="Course à pieds" />
+            </span>
+          {% when 'ROLLER' %}
+            <span class="hide-on-small-only">Roller</span>
+            <span class="hide-on-med-and-up">
+              <img style="height: 20%" src="{{ "/assets/images/skating.svg" | relative_url }}" title="Roller" />
+            </span>
+        {% endcase %}
+      </td>
+      <td>
+        {{ training.duration }}
+      </td>
+      <td>
+        {{ training.distance | default: '--' }}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<div class="center hide-on-med-and-up">
+  <p class="light">
+  Icônes par <a class="blue-grey-text text-darken-3" href="http://www.freepik.com" title="Freepik"><b>Freepik</b></a>
+  de <a class="blue-grey-text text-darken-3" href="http://www.flaticon.com" title="Flaticon"><b>www.flaticon.com</b></a>
+  <br />
+  sous licence <a class="blue-grey-text text-darken-3" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank"><b>CC 3.0 BY</b></a>
+  </p>
+</div>
