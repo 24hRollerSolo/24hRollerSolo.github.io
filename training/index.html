@@ -5,15 +5,27 @@ permalink: /training/
 exclude: false
 ---
 
-<h1>Entraînement</h1>
+<h1 class="hide-on-small-only grey-text text-darken-3 center light">Suivi de mon entraînement</h1>
+<h1 class="hide-on-med-and-up grey-text text-darken-3 center light">Entraînement</h1>
 
-<h2>Détails des entraînements</h2>
+<div>
+  <p class="flow-text grey-text text-darken-3 center">
+    Pour m'entraîner, je ne fais pas que du <a href="#" class="red-text text-darken-2">roller</a> !
+    Il y a aussi de la <a href="#" class="red-text text-darken-2">course à pieds</a>,
+    du <a href="#" class="red-text text-darken-2">vélo d'intérieur</a>
+    (notamment quand la météo ne permet pas de sortir dehors)
+    et des <a href="#" class="red-text text-darken-2">workouts avec Freeletics.</a><br />
+    Voici ce que cela donne semaine après semaine.
+  </p>
+</div>
 
-<canvas id="sportsChart" width="400" height="120"></canvas>
+<div>
+  <canvas id="sportsChart"></canvas>
+</div>
 
-<h2>Suivi du poids</h2>
-
-<canvas id="weightChart" width="400" height="120"></canvas>
+<div class="center" style="margin-top: 30px; margin-bottom: 30px">
+  <a class="waves-effect waves-light btn blue-grey darken-3" href="/training/details"><i class="material-icons right">visibility</i>Voir le détail</a>
+</div>
 
 <script type="text/javascript" src="{{ "/assets/scripts/moment.min.js" | relative_url }}"></script>
 <script type="text/javascript" src="{{ "/assets/scripts/Chart.min.js" | relative_url }}"></script>
@@ -46,36 +58,37 @@ var myChart = new Chart(ctx, {
         labels: labels,
         datasets: [
           {
-            label: 'Running',
+            label: 'Workout',
+            data: workoutData,
+            backgroundColor: '#3f51b5',
+            borderColor: '#3f51b5',
+            borderSkipped: true
+          },
+          {
+            label: 'Course à pieds',
             data: runningData,
-            backgroundColor: 'rgba(132, 77, 158, 1)',
-            borderColor: 'rgba(132, 77, 158, 1)',
+            backgroundColor: '#03a9f4',
+            borderColor: '#03a9f4',
+            borderSkipped: true
+          },
+          {
+            label: 'Vélo d\'intérieur',
+            data: bikeIndoorData,
+            backgroundColor: '#ffc107',
+            borderColor: '#ffc107',
             borderSkipped: true
           },
           {
             label: 'Roller',
             data: rollerData,
-            backgroundColor: 'rgba(235, 123, 45, 1)',
-            borderColor: 'rgba(235, 123, 45, 1)',
-            borderSkipped: true
-          },
-          {
-            label: 'Indoor Bike',
-            data: bikeIndoorData,
-            backgroundColor: 'rgba(249, 237, 58, 1)',
-            borderColor: 'rgba(249, 237, 58, 1)',
-            borderSkipped: true
-          },
-          {
-            label: 'Workout',
-            data: workoutData,
-            backgroundColor: 'rgba(76, 178, 212, 1)',
-            borderColor: 'rgba(76, 178, 212, 1)',
+            backgroundColor: '#c2185b',
+            borderColor: '#c2185b',
             borderSkipped: true
           }
       ]
     },
     options: {
+      responsive: true,
       scales: {
             xAxes: [{
                 stacked: true
@@ -86,45 +99,6 @@ var myChart = new Chart(ctx, {
                   display: true,
                   labelString: 'minutes'
                 }
-            }]
-        }
-    }
-});
-</script>
-
-<script>
-var weights = {{ site.data.weight | jsonify }};
-
-var labels = weights.map(function(item) { return item.date })
-var data = weights.map(function(item) { return item.weight })
-
-var ctx = document.getElementById("weightChart");
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: labels,
-        datasets: [{
-            label: 'Poids',
-            data: data,
-            fill: false,
-            backgroundColor: "rgba(66, 66, 66, 1)",
-            borderColor: "rgba(66, 66, 66, 1)"
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    max: 108,
-                    min: 100
-                },
-                scaleLabel: {
-                  display: true,
-                  labelString: 'kg'
-                }
-            }],
-            xAxes: [{
-                type: 'time'
             }]
         }
     }

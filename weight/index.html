@@ -1,0 +1,62 @@
+---
+layout: page
+title: Poids
+permalink: /weight/
+exclude: false
+---
+
+<h1 class="hide-on-small-only grey-text text-darken-3 center light">Suivi de mon poids</h1>
+<h1 class="hide-on-med-and-up grey-text text-darken-3 center light">Poids</h1>
+
+<div>
+  <p class="flow-text grey-text text-darken-3 center">
+    Moins j'aurai de kilos à trimballer pendant 24h, mieux de sera !
+    Objectif 90 kg ! (pour 1m89)
+  </p>
+</div>
+
+<div>
+  <canvas id="weightChart"></canvas>
+</div>
+
+<script type="text/javascript" src="{{ "/assets/scripts/moment.min.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/assets/scripts/Chart.min.js" | relative_url }}"></script>
+
+<script>
+var weights = {{ site.data.weight | jsonify }};
+
+var labels = weights.map(function(item) { return item.date })
+var data = weights.map(function(item) { return item.weight })
+
+var ctx = document.getElementById("weightChart");
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: labels,
+        datasets: [{
+            label: 'Poids',
+            data: data,
+            fill: false,
+            backgroundColor: "#263238",
+            borderColor: "#263238"
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    max: 108,
+                    min: 90
+                },
+                scaleLabel: {
+                  display: true,
+                  labelString: 'kg'
+                }
+            }],
+            xAxes: [{
+                type: 'time'
+            }]
+        }
+    }
+});
+</script>
