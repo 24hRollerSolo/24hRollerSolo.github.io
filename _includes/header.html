@@ -4,25 +4,18 @@
     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       <li><a href="/">Accueil</a></li>
-      {% for page in site.pages %}
-        {% unless page.exclude %}
-          {% if page.title %}
-          <li><a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a></li>
-          {% endif %}
-        {% endunless %}
-      {% endfor %}
+      <li><a href="/about">A propos</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/training">Entraînement</a></li>
+      <li><a href="/weight">Poids</a></li>
     </ul>
 
     <ul id="nav-mobile" class="side-nav">
       <li><a href="/">Accueil</a></li>
-      {% for page in site.pages %}
-        {% unless page.exclude %}
-          {% if page.title %}
-          <li><a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a></li>
-          {% endif %}
-        {% endunless %}
-      {% endfor %}
-
+      <li><a href="/about">A propos</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/training">Entraînement</a></li>
+      <li><a href="/weight">Poids</a></li>
     </ul>
   </div>
 </nav>
