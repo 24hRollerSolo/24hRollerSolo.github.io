@@ -15,9 +15,39 @@ exclude: false
     du <a href="#" class="red-text text-darken-2">vélo d'intérieur</a>
     (notamment quand la météo ne permet pas de sortir dehors)
     et des <a href="#" class="red-text text-darken-2">workouts avec Freeletics.</a><br />
-    Voici ce que cela donne semaine après semaine.
+    Au total depuis le 1er novembre 2016 j'ai fait :
   </p>
 </div>
+
+<div class="row">
+  <div class="col s12 m6 l3 center">
+    <div class="indigo white-text" style="font-size: 1.2em; padding: 10px; margin-bottom: 10px;">
+      <span id="total-workout">11</span> workouts
+    </div>
+  </div>
+  <div class="col s12 m6 l3 center">
+    <div class="blue white-text" style="font-size: 1.2em; padding: 10px; margin-bottom: 10px;">
+      <span id="total-running">123</span>km de course
+    </div>
+  </div>
+  <div class="col s12 m6 l3 center">
+    <div class="amber white-text" style="font-size: 1.2em; padding: 10px; margin-bottom: 10px;">
+      <span id="total-indoor-bike">23</span>h de vélo
+    </div>
+  </div>
+  <div class="col s12 m6 l3 center">
+    <div class="pink darken-2 white-text" style="font-size: 1.2em; padding: 10px; margin-bottom: 10px;">
+      <span id="total-roller">234</span>km de roller
+    </div>
+  </div>
+</div>
+
+<div>
+  <p class="flow-text grey-text text-darken-3 center">
+    Et voici ce que cela donne semaine après semaine :
+  </p>
+</div>
+
 
 <div>
   <canvas id="sportsChart"></canvas>
@@ -32,6 +62,7 @@ exclude: false
 
 <script>
 var sports = {{ site.data.sports | jsonify }};
+var totals = {"RUNNING": 0, "ROLLER": 0, "BIKE_INDOOR": 0, "WORKOUT": 0};
 var weeklyData = {};
 sports.forEach(function(item) {
   var date = moment(item.date)
@@ -43,7 +74,28 @@ sports.forEach(function(item) {
     weeklyData[key] = {"RUNNING": 0, "ROLLER": 0, "BIKE_INDOOR": 0, "WORKOUT": 0};
   }
   weeklyData[key][item.type] = weeklyData[key][item.type] + Math.round(moment.duration(item.duration).asMinutes());
+  switch (item.type) {
+    case "RUNNING":
+      totals["RUNNING"] += parseFloat(item.distance)
+      break;
+    case "ROLLER":
+      totals["ROLLER"] += parseFloat(item.distance)
+      break;
+    case "BIKE_INDOOR":
+      totals["BIKE_INDOOR"] += Math.round(moment.duration(item.duration).asMinutes())
+      break;
+    case "WORKOUT":
+      totals["WORKOUT"] += 1
+      break;
+    default:
+      console.log("Désolé, nous n'avons plus de " + expr + ".");
+  }
 });
+
+document.getElementById("total-workout").innerText=totals["WORKOUT"]
+document.getElementById("total-running").innerText=Math.round(totals["RUNNING"])
+document.getElementById("total-indoor-bike").innerText=Math.round(totals["BIKE_INDOOR"] / 60)
+document.getElementById("total-roller").innerText=Math.round(totals["ROLLER"])
 
 var labels = Object.keys(weeklyData).reverse();
 var runningData = labels.map(function(label) { return weeklyData[label]["RUNNING"] });
