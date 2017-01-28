@@ -1,4 +1,5 @@
 [
+  {"date": "2017-01-28", "type": "RUNNING", "distance": "5.00", "duration": "0:28:31"},
   {"date": "2017-01-27", "type": "BIKE_INDOOR", "distance": "37.33", "duration": "1:00:00", "program": "9"},
   {"date": "2017-01-26", "type": "WORKOUT", "program": "W04-02 | 10 BURPEES + 25 KNEES PUSHUPS + 3/4 HERMES Standard 2x2", "duration": "0:20:20"},
   {"date": "2017-01-24", "type": "WORKOUT", "program": "W04-01 | 25 HH LEG RAISES + 1/4 VENUS", "duration": "0:08:30"},
