@@ -1,4 +1,5 @@
 [
+  {"date": "2017-01-29", "type": "BIKE_INDOOR", "distance": "18.24", "duration": "0:30:00", "program": "9"},
   {"date": "2017-01-29", "type": "WORKOUT", "program": "W04-03 | 50 LUNGES + 3/5 NEMESIS Endurance", "duration": "0:14:36"},
   {"date": "2017-01-28", "type": "RUNNING", "distance": "5.00", "duration": "0:28:31"},
   {"date": "2017-01-27", "type": "BIKE_INDOOR", "distance": "37.33", "duration": "1:00:00", "program": "9"},
