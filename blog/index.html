@@ -4,15 +4,19 @@ title: Blog
 permalink: /blog/
 ---
 
-<h1>Blog</h1>
+<h1 class="grey-text text-darken-3 center light">Blog</h1>
 
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-    </li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+<div class="blog-entry">
+  <h2 class="grey-text text-darken-3 light">{{ post.title}}</h2>
+  <span class="grey-text light">{{ post.date | date: "%d/%m/%Y" }}</span>
+  {{ post.excerpt }}
+  <a class="red-text text-darken-2" href="{{ post.url | relative_url }}">
+    <i class="fa fa-play"></i> lire l'article
+  </a>
+</div>
+{% endfor %}
 
+<!-- TODO
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+-->
