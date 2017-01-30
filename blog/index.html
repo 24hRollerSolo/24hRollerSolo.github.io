@@ -4,7 +4,12 @@ title: Blog
 permalink: /blog/
 ---
 
-<h1 class="grey-text text-darken-3 center light">Blog</h1>
+<h1 class="grey-text text-darken-3 center light">
+  Blog
+  <a class="red-text text-darken-2" href="{{ "/feed.xml" | relative_url }}">
+    <i class="fa fa-rss" aria-hidden="true"></i>
+  </a>
+</h1>
 
 {% for post in site.posts %}
 <div class="blog-entry">

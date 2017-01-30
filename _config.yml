@@ -16,7 +16,7 @@
 title: 24h Roller en Solo
 description: Les 24h du Mans Roller en Solo contre le diabète
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.24hrollersolo.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
