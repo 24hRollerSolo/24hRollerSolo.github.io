@@ -3,13 +3,29 @@ layout: default
 author: Sébastien
 ---
 
-<h1 class="grey-text text-darken-3 light">{{ page.title}}</h1>
-<span class="grey-text light">{{ post.date | date: "%d/%m/%Y" }}</span>
+<h1 class="grey-text text-darken-3 light">{{ page.title }}</h1>
+<span class="grey-text light">{{ date | date: "%d/%m/%Y" }}</span>
 
 <div class="post-content">
   {{ content }}
 </div>
 
-{% if site.disqus.shortname %}
-  {% include disqus_comments.html %}
-{% endif %}
+<div id="disqus_thread"></div>
+
+<script>
+var disqus_config = function () {
+  this.page.url = "http://www.24hrollersolo.org{{ page.url | relative_url }}";
+  this.page.identifier = "{{ page.url }}";
+};
+
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = '//24hrollersolo.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
