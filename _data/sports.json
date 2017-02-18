@@ -1,4 +1,5 @@
 [
+  {"date": "2017-02-18", "type": "ROLLER", "distance": "30.06", "duration": "1:28:28"},
   {"date": "2017-02-18", "type": "WORKOUT", "program": "W07-02 | HERMES Standard 2x2", "duration": "0:24:00"},
   {"date": "2017-02-15", "type": "WORKOUT", "program": "W07-01 | NEMESIS Endurance", "duration": "0:10:59"},
   {"date": "2017-02-14", "type": "RUNNING", "distance": "11.99", "duration": "1:10:07"},
