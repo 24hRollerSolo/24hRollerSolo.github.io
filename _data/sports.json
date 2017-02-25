@@ -1,4 +1,5 @@
 [
+  {"date": "2017-02-25", "type": "ROLLER", "distance": "50.19", "duration": "2:36:04"},
   {"date": "2017-02-24", "type": "RUNNING", "distance": "11.00", "duration": "1:03:21"},
   {"date": "2017-02-23", "type": "WORKOUT", "program": "W08-01 | CONDITIONNEMENT + 1/5 ATHENA Endurance", "duration": "0:08:03"},
   {"date": "2017-02-21", "type": "RUNNING", "distance": "10.01", "duration": "0:49:52"},
