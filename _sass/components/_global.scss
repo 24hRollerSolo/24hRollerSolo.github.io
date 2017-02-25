@@ -661,7 +661,9 @@ nav ul a span.badge {
       top: 0;
       left: 0;
       width: 100%;
+      max-width: 800px;
       height: 100%;
+      max-height: 450px;
     }
 }
 
