@@ -1,5 +1,8 @@
 [
+  {"date": "2017-03-04", "type": "WORKOUT", "program": "W09-02 | 10 PUSHUPS + 1/5 APHRODITE Endurance", "duration": "0:09:35"},
+  {"date": "2017-03-04", "type": "ROLLER", "distance": "20.06", "duration": "1:02:06"},
   {"date": "2017-03-03", "type": "WORKOUT", "program": "W09-01 | ENDURANCE + 1/5 NEMESIS Endurance", "duration": "0:13:23"},
+  {"date": "2017-03-03", "type": "RUNNING", "distance": "8.01", "duration": "0:50:26"},
   {"date": "2017-03-02", "type": "WORKOUT", "program": "W08-03 | FORCE + 3/5 MORPHEUS Standard", "duration": "0:15:05"},
   {"date": "2017-03-02", "type": "RUNNING", "distance": "8.05", "duration": "0:45:04"},
   {"date": "2017-02-26", "type": "RUNNING", "distance": "13.54", "duration": "1:20:37"},
