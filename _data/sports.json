@@ -1,4 +1,5 @@
 [
+  {"date": "2017-03-11", "type": "RUNNING", "distance": "8.86", "duration": "0:52:23"},
   {"date": "2017-03-10", "type": "ROLLER", "distance": "50.08", "duration": "2:32:02"},
   {"date": "2017-03-09", "type": "WORKOUT", "program": "W10-01 | 25 LUNGES + ENDURANCE", "duration": "0:13:55"},
   {"date": "2017-03-09", "type": "RUNNING", "distance": "8.24", "duration": "0:46:36"},
