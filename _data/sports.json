@@ -1,4 +1,5 @@
 [
+  {"date": "2017-03-25", "type": "BIKE_INDOOR", "distance": "37.15", "duration": "1:00:00", "program": "9"},
   {"date": "2017-03-24", "type": "RUNNING", "distance": "8.20", "duration": "0:45:04"},
   {"date": "2017-03-22", "type": "RUNNING", "distance": "8.76", "duration": "0:45:09"},
   {"date": "2017-03-22", "type": "WORKOUT", "program": "W10-03 | CONDITIONNEMENT + 1/4 VENUS Standard", "duration": "0:11:24"},
