@@ -1,4 +1,6 @@
 [
+  {"date": "2017-04-16", "type": "ROLLER", "distance": "53.11", "duration": "2:33:38"},
+  {"date": "2017-04-15", "type": "RUNNING", "distance": "17.00", "duration": "1:30:31"},
   {"date": "2017-04-13", "type": "RUNNING", "distance": "10.25", "duration": "0:56:11"},
   {"date": "2017-04-12", "type": "ROLLER", "distance": "14.62", "duration": "1:03:00"},
   {"date": "2017-04-12", "type": "WORKOUT", "program": "W11-02 | 10 MOUNTAIN CLIMBERS + 3/4 HERMES Standard 2x2", "duration": "0:14:28"},
