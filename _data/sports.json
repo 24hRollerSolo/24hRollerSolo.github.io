@@ -1,4 +1,8 @@
 [
+  {"date": "2017-05-16", "type": "ROLLER", "distance": "34.01", "duration": "1:38:17"},
+  {"date": "2017-05-16", "type": "RUNNING", "distance": "9.04", "duration": "0:44:58"},
+  {"date": "2017-05-14", "type": "ROLLER", "distance": "20.20", "duration": "0:54:02"},
+  {"date": "2017-05-13", "type": "RUNNING", "distance": "8.10", "duration": "0:42:20"},
   {"date": "2017-05-08", "type": "ROLLER", "distance": "31.59", "duration": "1:52:54"},
   {"date": "2017-05-01", "type": "ROLLER", "distance": "122.45", "duration": "6:05:31"},
   {"date": "2017-04-30", "type": "RUNNING", "distance": "21.51", "duration": "1:46:40"},
