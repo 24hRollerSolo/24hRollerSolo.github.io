@@ -1,4 +1,6 @@
 [
+  {"date": "2017-05-21", "type": "ROLLER", "distance": "17.25", "duration": "1:11:28"},
+  {"date": "2017-05-20", "type": "ROLLER", "distance": "46.92", "duration": "2:50:43"},
   {"date": "2017-05-19", "type": "WORKOUT", "program": "W11-03 | CONDITIONNEMENT + 1/5 APHRODITE", "duration": "0:18:38"},
   {"date": "2017-05-16", "type": "ROLLER", "distance": "34.01", "duration": "1:38:17"},
   {"date": "2017-05-16", "type": "RUNNING", "distance": "9.04", "duration": "0:44:58"},
