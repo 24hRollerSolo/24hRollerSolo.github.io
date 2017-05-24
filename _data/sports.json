@@ -1,4 +1,5 @@
 [
+  {"date": "2017-05-24", "type": "RUNNING", "distance": "3.41", "duration": "0:15:13"},
   {"date": "2017-05-24", "type": "WORKOUT", "program": "W12-01 | CONDITIONNEMENT + 1/4 VENUS", "duration": "0:13:14"},
   {"date": "2017-05-23", "type": "RUNNING", "distance": "10.02", "duration": "0:48:36"},
   {"date": "2017-05-21", "type": "ROLLER", "distance": "17.25", "duration": "1:11:28"},
