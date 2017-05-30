@@ -1,4 +1,5 @@
 [
+  {"date": "2017-05-30", "type": "RUNNING", "distance": "10.08", "duration": "0:53:24"},
   {"date": "2017-05-27", "type": "RUNNING", "distance": "7.07", "duration": "0:36:58"},
   {"date": "2017-05-25", "type": "ROLLER", "distance": "40.39", "duration": "1:57:26"},
   {"date": "2017-05-24", "type": "RUNNING", "distance": "3.41", "duration": "0:15:13"},
