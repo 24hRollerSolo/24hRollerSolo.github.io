@@ -1,5 +1,7 @@
 [
-  {"date": "2017-06-03", "type": "ROLLER", "distance": "80.22", "duration": "3:22:27"},
+  {"date": "2017-06-11", "type": "ROLLER", "distance": "60.62", "duration": "2:49:37"},
+  {"date": "2017-06-10", "type": "ROLLER", "distance": "40.38", "duration": "2:10:08"},
+  {"date": "2017-06-04", "type": "ROLLER", "distance": "80.22", "duration": "3:22:27"},
   {"date": "2017-06-03", "type": "ROLLER", "distance": "72.08", "duration": "3:04:44"},
   {"date": "2017-05-31", "type": "ROLLER", "distance": "15.63", "duration": "0:58:34"},
   {"date": "2017-05-30", "type": "ROLLER", "distance": "35.24", "duration": "1:44:13"},
